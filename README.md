@@ -3,7 +3,7 @@
 ## Introduction
 This lab simulates a multi-site network infrastructure with VLAN segmentation, spanning tree configuration, dynamic and static routing, and BGP-based inter-site communication. The setup includes two sites, each with core, distribution, and access switches, and a site router connecting to a central core router.
 
-![Network Topology](images/1.png)
+
 
 ## Objectives
 - Implement VLAN segmentation and inter-VLAN routing.
@@ -13,9 +13,11 @@ This lab simulates a multi-site network infrastructure with VLAN segmentation, s
 - Ensure redundancy and efficient traffic flow through link aggregation.
 - Verify network connectivity and troubleshoot common issues.
 
+![Full Network Topology](images/3.png)
+
 ## Lab Topology
 ### Network Overview
-![Lab Diagram](images/2.png)
+
 
 - **Site 1:**
   - VLAN 10: `12.1.1.0/24`
@@ -23,11 +25,15 @@ This lab simulates a multi-site network infrastructure with VLAN segmentation, s
   - Transmit (Core to Router): `192.168.1.0/30`
   - WAN Network (to Core Router): `102.1.1.2/30`
 
+![Site 1 Topology](images/1.png)
+
 - **Site 2:**
   - VLAN 10: `14.1.1.0/24`
   - VLAN 20: `15.1.1.0/24`
   - Transmit (Core to Router): `192.168.2.0/30`
   - WAN Network (to Core Router): `103.1.1.2/30`
+
+![Site 2 Topology](images/2.png)
 
 ### Network Components
 #### 1. Access Layer
@@ -53,7 +59,7 @@ This lab simulates a multi-site network infrastructure with VLAN segmentation, s
 - Advertises site networks for inter-site communication.
 
 ## Verification Commands
-![Verification Example](images/3.png)
+
 
 ### VLAN and Spanning Tree
 - `show vlan brief`  
@@ -75,6 +81,10 @@ This lab simulates a multi-site network infrastructure with VLAN segmentation, s
 ### Connectivity Testing
 - `ping <destination IP>`  
 - `traceroute <destination IP>`  
+
+## Lab Files
+- The full [UNI file](./network-lab.uni) for this lab is included in this repository.  
+  You can use it to load the lab directly into **pNETLab**.
 
 ## Lab Requirements
 To run this lab, ensure the following hardware and software requirements are met:
