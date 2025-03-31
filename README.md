@@ -83,7 +83,7 @@ This lab simulates a multi-site network infrastructure with VLAN segmentation, s
 - `traceroute <destination IP>`  
 
 ## Lab Files
-- The full [UNI file](./network-lab.uni) for this lab is included in this repository.  
+- The full [UNI file](./network-lab.unl) for this lab is included in this repository.  
   You can use it to load the lab directly into **pNETLab**.
 
 ## Lab Requirements
